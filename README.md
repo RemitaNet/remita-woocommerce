@@ -1,1 +1,0 @@
-# remita-woocommerce
