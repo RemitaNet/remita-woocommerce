@@ -76,6 +76,4 @@ To setup the plugin, go to __WooCommerce > Settings__�from the left hand menu,
 ![](configpage.png)
 
 
-![](chooseremita.png) 
-
 

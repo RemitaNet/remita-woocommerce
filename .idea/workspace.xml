@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52ba9c1a-9c87-4a42-9785-5c0f58513f38" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme2.md" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="woocommerce_remita.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="woocommerce_remita.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/woocommerce_remita.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -22,6 +22,19 @@
                 <marker date="1547035238793" expanded="true" signature="693:977" ph="CREATE TABLE... ${$table_name}" />
                 <marker date="1547035238793" expanded="true" signature="15806:15811" ph="&amp;" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="574">
+                <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -141,12 +154,12 @@
       <workItem from="1554212120049" duration="1451000" />
       <workItem from="1554367946908" duration="86000" />
       <workItem from="1554631736249" duration="6000" />
-      <workItem from="1558019321510" duration="3265000" />
+      <workItem from="1558019321510" duration="3455000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4808000" />
+    <option name="totallyTimeSpent" value="4998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -214,17 +227,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="472">
-            <caret line="75" column="19" lean-forward="true" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme2.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -241,6 +243,17 @@
             <marker date="1547035238793" expanded="true" signature="693:977" ph="CREATE TABLE... ${$table_name}" />
             <marker date="1547035238793" expanded="true" signature="15806:15811" ph="&amp;" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="574">
+            <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
