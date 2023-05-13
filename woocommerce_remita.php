@@ -463,10 +463,13 @@ function wc_remita_init()
     }
 
     function woocommerce_remita_plugin_action_links( $links ) {
-$settings_link = array(
-'settings' => '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=checkout&section=remita' ) . '" title="' . _( 'View Remita WooCommerce Settings', 'remita' ) . '">' . _( 'Settings', 'remita' ) . '</a>',
- );
-return array_merge( $settings_link, $links );
+// $settings_link = array(
+// 'settings' => '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=checkout&section=remita' ) . '" title="' . _( 'View Remita WooCommerce Settings', 'remita' ) . '">' . _( 'Settings', 'remita' ) . '</a>',
+//  );
+// return array_merge( $settings_link, $links );
+$settings_link = '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=checkout&section=remita' ) . '" title="' . _( 'View Remita WooCommerce Settings', 'remita' ) . '">' . _( 'Settings', 'remita' ) . '</a>';
+array_unshift($links, $settings_link); 
+  return $links;
 }
     add_filter('woocommerce_payment_gateways', 'woocommerce_add_remita_gateway');
     add_filter( 'plugin_action_links_' . plugin_basename( _FILE_ ), 'woocommerce_remita_plugin_action_links' );
