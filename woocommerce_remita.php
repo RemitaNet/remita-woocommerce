@@ -5,7 +5,7 @@
   Description: Remita Woocommerce Payment gateway allows you to accept payment on your Woocommerce store.
   Author:      SystemSpecs Limited
   Author URI:  https://systemspecs.com.ng
-  Version:     2.0
+  Version:     2.2.1
   
  */
 
