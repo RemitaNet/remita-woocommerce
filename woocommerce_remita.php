@@ -389,13 +389,15 @@ function wc_remita_init()
             if (is_object($order)) {
                 $order_amount  = method_exists($order, 'get_total') ? $order->get_total() : $order->order_total;
                 $order_amount  = $order_amount;
+
+                $email         = method_exists($order, 'get_billing_email') ? $order->get_billing_email() : $order->billing_email;
+                $billing_phone = method_exists($order, 'get_billing_phone') ? $order->get_billing_phone() : $order->billing_phone;
+                $first_name    = method_exists($order, 'get_billing_first_name') ? $order->get_billing_first_name() : $order->billing_first_name;
+                $last_name     = method_exists($order, 'get_billing_last_name') ? $order->get_billing_last_name() : $order->billing_last_name;
+                $uniqueRef     = uniqid();
+                $uniqueOrderId = $uniqueRef . '_' . $order_id;
             }
-            $email         = method_exists($order, 'get_billing_email') ? $order->get_billing_email() : $order->billing_email;
-            $billing_phone = method_exists($order, 'get_billing_phone') ? $order->get_billing_phone() : $order->billing_phone;
-            $first_name    = method_exists($order, 'get_billing_first_name') ? $order->get_billing_first_name() : $order->billing_first_name;
-            $last_name     = method_exists($order, 'get_billing_last_name') ? $order->get_billing_last_name() : $order->billing_last_name;
-            $uniqueRef     = uniqid();
-            $uniqueOrderId = $uniqueRef . '_' . $order_id;
+            
 
             if ($this->remita_mode == 'Test') {
 
