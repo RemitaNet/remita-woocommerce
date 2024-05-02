@@ -381,6 +381,14 @@ function wc_remita_init()
         {
             $order = null;
 
+            $order_amount  = 0;
+            $order_id      = 0;
+            $billing_phone = '';
+            $email         = '';
+            $first_name    = '';
+            $last_name     = '';
+            $uniqueOrderId = '';
+
             if (isset($_GET['order'])) {
                 $order_id      = urldecode($_GET['order']);
                 $order         = wc_get_order($order_id);
