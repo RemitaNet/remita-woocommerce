@@ -379,14 +379,16 @@ function wc_remita_init()
 
         public function payment_scripts()
         {
+            $order = null;
+
             if (isset($_GET['order'])) {
                 $order_id      = urldecode($_GET['order']);
                 $order         = wc_get_order($order_id);
-                //Ensure $order is not fasle before accessing its properties
-                if ($order) {
-                    $order_amount  = method_exists($order, 'get_total') ? $order->get_total() : $order->order_total;
-                    $order_amount  = $order_amount;
-                }
+            }
+            //Ensure $order is not fasle before accessing its properties
+            if (is_object($order)) {
+                $order_amount  = method_exists($order, 'get_total') ? $order->get_total() : $order->order_total;
+                $order_amount  = $order_amount;
             }
             $email         = method_exists($order, 'get_billing_email') ? $order->get_billing_email() : $order->billing_email;
             $billing_phone = method_exists($order, 'get_billing_phone') ? $order->get_billing_phone() : $order->billing_phone;
