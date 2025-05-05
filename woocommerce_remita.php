@@ -8,7 +8,7 @@
   * Author URI:  https://remita.net/
   * Version:     5.8.2
   * WC requires at least: 6.0
-  * WC tested up to: 8.3
+  * WC tested up to: 6.5.2
   * Text Domain: woo-remita
   
  */
@@ -108,11 +108,11 @@ function wc_remita_init()
             //Filters
             add_filter('woocommerce_currencies', array(
                 $this,
-                'add_ngn_currency'
+                'add_supported_currency'
             ));
             add_filter('woocommerce_currency_symbol', array(
                 $this,
-                'add_ngn_currency_symbol'
+                'add_supported_currency_symbol'
             ), 10, 2);
 
             // Hooks
@@ -125,18 +125,23 @@ function wc_remita_init()
         }
 
 
-        function add_ngn_currency($currencies)
+        function add_supported_currency($currencies)
         {
             $currencies['NGN'] = __('Nigerian Naira (NGN)', 'woocommerce');
+            $currencies['USD'] = __('United States Dollar (USD)', 'woocommerce');
             return $currencies;
         }
 
-        function add_ngn_currency_symbol($currency_symbol, $currency)
+        function add_supported_currency_symbol($currency_symbol, $currency)
         {
             switch ($currency) {
                 case 'NGN':
                     $currency_symbol = '₦';
                     break;
+                case 'USD':
+                        $currency_symbol = '$';
+                    break;
+            
             }
 
             return $currency_symbol;
@@ -147,7 +152,7 @@ function wc_remita_init()
             $return = true;
 
             if (!in_array(get_option('woocommerce_currency'), array(
-                'NGN'
+                'NGN', 'USD'
             ))) {
                 $return = false;
             }

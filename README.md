@@ -22,6 +22,7 @@ With Remita Woocommerce Payment Plugin, the store admin can easily add all desir
 
 * 	__Seamless integration__ into the Woocommerce checkout page.
 * 	__Add Naira__ currency symbol.
+* 	__Add Dollar__ currency symbol.
 
 ---
 
